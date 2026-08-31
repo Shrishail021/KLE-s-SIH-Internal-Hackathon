@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-500
-        w-[95%] max-w-7xl rounded-full
+        w-[98%] xl:w-[95%] max-w-[1400px] rounded-full
         ${scrolled ? 'glass-navbar-scrolled' : 'glass-navbar'}
       `}
     >
@@ -56,10 +56,10 @@ export default function Navbar() {
             />
           </div>
           <div className="flex flex-col justify-center">
-            <span className="font-montserrat font-bold text-[11px] sm:text-base text-navy leading-tight block tracking-tight">
+            <span className="font-montserrat font-bold text-[11px] sm:text-base text-navy leading-tight block tracking-tight sm:whitespace-nowrap">
               KLE Society's P.C. Jabin Science College, Hubballi
             </span>
-            <span className="font-inter text-[10px] sm:text-sm text-on-surface-variant leading-tight block mt-0.5">
+            <span className="font-inter text-[10px] sm:text-sm text-on-surface-variant leading-tight block mt-0.5 sm:whitespace-nowrap">
               Internal Hackathon 2026
             </span>
           </div>
