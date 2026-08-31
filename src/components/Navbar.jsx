@@ -33,7 +33,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-500
+      className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-300
         w-[98%] xl:w-[95%] max-w-[1400px] 
         ${menuOpen ? 'rounded-3xl' : 'rounded-full'}
         ${scrolled ? 'glass-navbar-scrolled' : 'glass-navbar'}
