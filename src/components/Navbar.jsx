@@ -55,17 +55,14 @@ export default function Navbar() {
               draggable={false}
             />
           </div>
-          <div className="hidden sm:block">
-            <span className="font-montserrat font-bold text-base text-navy leading-tight block tracking-tight">
-              KLE Society's P.C. Jabin Science College,Hubballi
+          <div className="flex flex-col justify-center">
+            <span className="font-montserrat font-bold text-[11px] sm:text-base text-navy leading-tight block tracking-tight">
+              KLE Society's P.C. Jabin Science College, Hubballi
             </span>
-            <span className="font-inter text-sm text-on-surface-variant leading-tight block">
+            <span className="font-inter text-[10px] sm:text-sm text-on-surface-variant leading-tight block mt-0.5">
               Internal Hackathon 2026
             </span>
           </div>
-          <span className="sm:hidden font-montserrat font-bold text-sm text-navy tracking-tight">
-            Jabin H'26
-          </span>
         </a>
 
         {/* Desktop Nav */}
