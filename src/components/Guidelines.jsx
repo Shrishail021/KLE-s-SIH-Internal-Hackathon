@@ -22,15 +22,6 @@ const GUIDELINES = [
     bgColor: 'rgba(0, 31, 63, 0.06)',
   },
   {
-    id: 'submission',
-    icon: 'timer',
-    title: 'Build Duration',
-    description:
-      'Teams have exactly 8 hours to design, develop, and present a working prototype of their solution.',
-    color: '#0c6780',
-    bgColor: 'rgba(135, 206, 235, 0.15)',
-  },
-  {
     id: 'code-of-conduct',
     icon: 'verified',
     title: 'Code of Conduct',
