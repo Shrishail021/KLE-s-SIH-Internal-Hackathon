@@ -25,10 +25,14 @@ export default function Navbar() {
   const handleNavClick = (e, href) => {
     e.preventDefault()
     setMenuOpen(false)
-    const el = document.querySelector(href)
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }
+    
+    // Slight delay to ensure the menu close animation doesn't interrupt scrolling on mobile
+    setTimeout(() => {
+      const el = document.querySelector(href)
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }, 150)
   }
 
   return (
