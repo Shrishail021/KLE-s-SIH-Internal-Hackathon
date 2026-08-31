@@ -52,32 +52,32 @@ export default function Navbar() {
           aria-label="KLE Jabin Hackathon Home"
         >
           {/* KLE Society Logo */}
-          <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm overflow-hidden border border-white/60">
+          <div className="w-10 h-10 md:w-12 md:h-12 xl:w-14 xl:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm overflow-hidden border border-white/60">
             <img
               src={kleLogo}
               alt="KLE Society logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain drop-shadow-sm"
+              className="w-8 h-8 md:w-10 md:h-10 xl:w-12 xl:h-12 object-contain drop-shadow-sm"
               draggable={false}
             />
           </div>
           <div className="flex flex-col justify-center">
-            <span className="font-montserrat font-bold text-[11px] sm:text-base text-navy leading-tight block tracking-tight sm:whitespace-nowrap">
+            <span className="font-montserrat font-bold text-[11px] md:text-[13px] xl:text-base text-navy leading-tight block tracking-tight xl:whitespace-nowrap">
               KLE Society's P.C. Jabin Science College, Hubballi
             </span>
-            <span className="font-inter text-[10px] sm:text-sm text-on-surface-variant leading-tight block mt-0.5 sm:whitespace-nowrap">
+            <span className="font-inter text-[10px] md:text-[11px] xl:text-sm text-on-surface-variant leading-tight block mt-0.5 xl:whitespace-nowrap">
               Internal Hackathon 2026
             </span>
           </div>
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-2 lg:gap-4" aria-label="Primary navigation">
+        <nav className="hidden md:flex items-center gap-1 lg:gap-3 xl:gap-4" aria-label="Primary navigation">
           {NAV_LINKS.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="px-5 py-2.5 rounded-full font-inter text-base font-medium text-on-surface-variant
+              className="px-3 py-2 xl:px-5 xl:py-2.5 rounded-full font-inter text-xs lg:text-sm xl:text-base font-medium text-on-surface-variant
                 hover:text-navy hover:bg-white/60 transition-all duration-200 whitespace-nowrap"
             >
               {link.label}
@@ -88,7 +88,7 @@ export default function Navbar() {
             href="https://sih.gov.in/sih2026PS"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2.5 rounded-full font-inter text-base font-medium text-on-surface-variant
+            className="px-3 py-2 xl:px-5 xl:py-2.5 rounded-full font-inter text-xs lg:text-sm xl:text-base font-medium text-on-surface-variant
               hover:text-navy hover:bg-white/60 transition-all duration-200 whitespace-nowrap hidden lg:inline-flex items-center gap-1"
           >
             SIH Portal
@@ -100,7 +100,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             id="navbar-register-btn"
-            className="ml-3 btn-primary text-base px-6 py-3 shadow-card"
+            className="ml-1 xl:ml-3 btn-primary text-xs lg:text-sm xl:text-base px-4 py-2 xl:px-6 xl:py-3 shadow-card whitespace-nowrap"
           >
             Register
           </a>
