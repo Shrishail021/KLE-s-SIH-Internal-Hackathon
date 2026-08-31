@@ -1,5 +1,5 @@
-import { Suspense } from 'react'
 import { motion } from 'framer-motion'
+import { Suspense } from 'react'
 import ThreeDBackground from './ThreeDBackground'
 
 const REGISTER_URL = 'https://forms.gle/EEJkLAPL4BbryiQ9A'   // [GOOGLE_FORM_LINK]
@@ -89,7 +89,7 @@ export default function Hero() {
           className="font-montserrat font-black text-[#000613] leading-[1.05] tracking-tight mb-6
             text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem]"
         >
-          Internal{' '}
+          Smart India Internal{' '}
           <span
             className="relative inline-block"
             style={{
@@ -123,10 +123,30 @@ export default function Hero() {
           className="font-inter text-lg md:text-xl text-on-surface-variant/80 max-w-3xl mb-12 leading-relaxed"
         >
           {/* [EDIT ME] — Replace with actual event description */}
-          Build real-world solutions using Smart India Hackathon problem statements. Form your team of
-          exactly&nbsp;<strong className="text-navy">6 students</strong> from the same department and compete in an&nbsp;
-          <strong className="text-navy">8-hour sprint</strong> of innovation.
+          Build real-world solutions using Smart India Hackathon problem statements.
         </motion.p>
+
+        {/* Date, Time, Venue Info Row */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={0.35}
+          className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 md:gap-8 mb-10 font-inter text-navy"
+        >
+          <div className="flex items-center gap-2 bg-white/50 backdrop-blur-md px-4 py-2.5 rounded-lg border border-navy/10 shadow-sm">
+            <span className="material-symbols-outlined text-xl text-[#0c6780]">calendar_month</span>
+            <span className="font-semibold text-sm md:text-base">10/09/2026 (Thursday)</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/50 backdrop-blur-md px-4 py-2.5 rounded-lg border border-navy/10 shadow-sm">
+            <span className="material-symbols-outlined text-xl text-[#0c6780]">schedule</span>
+            <span className="font-semibold text-sm md:text-base">9:00 AM onwards</span>
+          </div>
+          <div className="flex items-center gap-2 bg-white/50 backdrop-blur-md px-4 py-2.5 rounded-lg border border-navy/10 shadow-sm">
+            <span className="material-symbols-outlined text-xl text-[#0c6780]">location_on</span>
+            <span className="font-semibold text-sm md:text-base">Department of Computer Applications</span>
+          </div>
+        </motion.div>
 
         {/* CTA Buttons */}
         <motion.div

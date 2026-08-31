@@ -336,18 +336,18 @@ export default function ProblemStatement() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center font-inter text-sm text-on-surface-variant/60 mt-10"
+          className="text-center font-inter text-base md:text-lg text-on-surface-variant/80 mt-10 max-w-3xl mx-auto"
         >
           Problem statements shown are representative examples.{' '}
           <a
             href={SIH_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#0c6780] font-medium underline underline-offset-2 hover:text-navy transition-colors"
+            className="text-[#0c6780] font-semibold underline underline-offset-4 hover:text-navy transition-colors"
           >
             Visit the official SIH portal
           </a>{' '}
-          for the complete and authoritative list. {/* [EDIT ME] */}
+          for the complete and authoritative list.
         </motion.p>
 
       </div>

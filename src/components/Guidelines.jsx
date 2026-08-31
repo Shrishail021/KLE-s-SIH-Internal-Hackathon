@@ -8,7 +8,7 @@ const GUIDELINES = [
     icon: 'groups',
     title: 'Team Size',
     description:
-      'Each team must consist of exactly 6 members. No more, no less — every member plays a critical role.',
+      'Each team must consist of exactly 6 members. At least one female  team member is mandatory.',
     color: '#0c6780',
     bgColor: 'rgba(154, 225, 255, 0.15)',
   },

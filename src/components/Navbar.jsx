@@ -47,17 +47,17 @@ export default function Navbar() {
           aria-label="KLE Jabin Hackathon Home"
         >
           {/* KLE Society Logo */}
-          <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm overflow-hidden border border-white/60">
+          <div className="w-10 h-10 md:w-14 md:h-14 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm overflow-hidden border border-white/60">
             <img
               src={kleLogo}
               alt="KLE Society logo"
-              className="w-12 h-12 object-contain drop-shadow-sm"
+              className="w-8 h-8 md:w-12 md:h-12 object-contain drop-shadow-sm"
               draggable={false}
             />
           </div>
           <div className="hidden sm:block">
             <span className="font-montserrat font-bold text-base text-navy leading-tight block tracking-tight">
-              KLE's P.C. Jabin
+              KLE Society's P.C. Jabin Science College,Hubballi
             </span>
             <span className="font-inter text-sm text-on-surface-variant leading-tight block">
               Internal Hackathon 2026

@@ -1,6 +1,5 @@
 import { useRef, useEffect } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { useMediaQuery } from '../hooks/useMediaQuery'
 
 // ─── Rotating Wireframe Polyhedron ──────────────────────
 function WireframePolyhedron() {
@@ -60,22 +59,6 @@ function Lights() {
 // ─── Main Export ───────────────────────────────────────
 // Isolated so it can be removed/swapped without touching Hero
 export default function ThreeDBackground() {
-  const isMobile = useMediaQuery('(max-width: 768px)')
-
-  // On very small screens, render a static decorative gradient instead
-  if (isMobile) {
-    return (
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(ellipse 70% 60% at 80% 40%, rgba(135,206,235,0.22) 0%, transparent 70%)',
-        }}
-      />
-    )
-  }
-
   return (
     <div
       aria-hidden="true"

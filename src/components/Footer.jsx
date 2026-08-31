@@ -36,21 +36,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* College Info */}
           <div className="lg:col-span-2">
-            <LogoRow />
             <div className="mt-4">
               <h3 className="font-montserrat font-bold text-base text-white mb-1">
                 KLE Society's P.C. Jabin Science College
               </h3>
               <p className="font-inter text-sm text-white/60 leading-relaxed">
-
-                Hubli, Karnataka — 580031<br />
-
+                Department of Computer Applications<br />
+                Hubli, Karnataka — 580031
               </p>
             </div>
             <div className="mt-4 flex gap-3">
               {/* Social placeholders — [EDIT ME] replace # with real URLs */}
               <a
-                href="#"
+                href="https://www.instagram.com/klesmcapcjhubballi/"
                 aria-label="Instagram"
                 className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center
                   text-white/60 hover:text-white hover:border-white/60 transition-all duration-200"
@@ -60,7 +58,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/klesbcahubballi?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 aria-label="LinkedIn"
                 className="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center
                   text-white/60 hover:text-white hover:border-white/60 transition-all duration-200"
@@ -100,28 +98,34 @@ export default function Footer() {
             <ul className="flex flex-col gap-3">
               <li>
                 <a
-                  href="mailto:hackathon@jabinsciencecollege.edu.in"  // [EDIT ME]
+                  href="mailto:infodesk@klebcahubli.in"  // [EDIT ME]
                   className="font-inter text-sm text-white/60 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
                   <span className="material-symbols-outlined text-sm text-skyblue">mail</span>
                   {/* [EDIT ME] */}
-                  hackathon@jabinsciencecollege.edu.in
+                  infodesk@klebcahubli.in
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+910000000000"  // [EDIT ME]
+                  href="tel:0836-237-2298"  // [EDIT ME]
                   className="font-inter text-sm text-white/60 hover:text-white transition-colors duration-200 flex items-center gap-2"
                 >
                   <span className="material-symbols-outlined text-sm text-skyblue">phone</span>
                   {/* [EDIT ME] */}
-                  +91 00000-00000
+                  0836-237-2298
                 </a>
               </li>
-              <li className="font-inter text-sm text-white/60 flex items-start gap-2">
-                <span className="material-symbols-outlined text-sm text-skyblue mt-0.5">location_on</span>
-                {/* [EDIT ME] */}
-                P.C. Jabin Science College, Vidyanagar, Hubli-580031
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/7pmrqXstTzjcD92y5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-inter text-sm text-white/60 hover:text-white transition-colors duration-200 flex items-start gap-2"
+                >
+                  <span className="material-symbols-outlined text-sm text-skyblue mt-0.5">location_on</span>
+                  P.C. Jabin Science College, Vidyanagar, Hubli-580031
+                </a>
               </li>
             </ul>
           </div>

@@ -23,7 +23,7 @@ const STEPS = [
     icon: 'edit_document',
     title: 'Fill the Registration Form',
     description:
-      'Complete the Google Form with your team details, selected problem statement, and a brief idea summary before the deadline. [EDIT ME: Add deadline date]',
+      'Complete the Google Form with your team details, selected problem statement, and a brief idea summary before 08-09-2026 3.00pm.',
   },
   {
     id: 4,
@@ -135,26 +135,17 @@ export default function Registration() {
               ))}
             </motion.div>
 
-            {/* Contact info placeholder */}
+            {/* Registration Deadline Highlight */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.5 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 text-sm text-on-surface-variant"
+              className="flex items-center justify-center mb-12"
             >
-              <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-base text-[#0c6780]">mail</span>
-                <span>
-                  {/* [EDIT ME] */}
-                  hackathon@jabinsciencecollege.edu.in
-                </span>
-              </div>
-              <div className="hidden sm:block w-px h-4 bg-outline-variant" />
-              <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-base text-[#0c6780]">event</span>
-                <span>
-                  {/* [EDIT ME] — Replace with real deadline */}
-                  Registration Deadline: <strong className="text-navy">TBD</strong>
+              <div className="flex items-center gap-3 bg-white/80 backdrop-blur-md px-6 py-3 rounded-full border border-navy/10 shadow-sm">
+                <span className="material-symbols-outlined text-2xl text-[#e63946]">alarm</span>
+                <span className="font-inter text-base md:text-lg text-on-surface-variant">
+                  Registration Deadline: <strong className="text-[#e63946] font-bold">08-09-2026 3.00pm</strong>
                 </span>
               </div>
             </motion.div>
