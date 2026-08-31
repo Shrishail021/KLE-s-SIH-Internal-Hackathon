@@ -89,7 +89,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="px-3 py-2 xl:px-5 xl:py-2.5 rounded-full font-inter text-xs lg:text-sm xl:text-base font-medium text-on-surface-variant
-              hover:text-navy hover:bg-white/60 transition-all duration-200 whitespace-nowrap hidden lg:inline-flex items-center gap-1"
+              hover:text-navy hover:bg-white/60 transition-all duration-200 whitespace-nowrap hidden md:inline-flex items-center gap-1"
           >
             SIH Portal
             <span className="material-symbols-outlined text-xs">open_in_new</span>
