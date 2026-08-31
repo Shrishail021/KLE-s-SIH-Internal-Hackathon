@@ -65,7 +65,7 @@ export default function Hero() {
       </Suspense>
 
       {/* Hero Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 py-24 flex flex-col items-center text-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-20 flex flex-col items-center text-center">
 
         {/* Event badge */}
         <motion.div

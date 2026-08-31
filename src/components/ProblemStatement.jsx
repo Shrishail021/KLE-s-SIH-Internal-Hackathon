@@ -251,7 +251,7 @@ export default function ProblemStatement() {
   return (
     <section
       id="problem-statement"
-      className="py-24 md:py-32 relative overflow-hidden"
+      className="py-16 md:py-24 relative overflow-hidden"
     >
       {/* Background gradient */}
       <div

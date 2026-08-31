@@ -62,7 +62,7 @@ export default function Guidelines() {
   const { ref, inView } = useInView({ threshold: 0.1, once: true })
 
   return (
-    <section id="guidelines" className="py-24 md:py-32 px-6 md:px-12 max-w-7xl mx-auto">
+    <section id="guidelines" className="py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto">
       {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

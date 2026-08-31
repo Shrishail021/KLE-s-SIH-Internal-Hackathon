@@ -52,7 +52,7 @@ export default function Registration() {
   const { ref, inView } = useInView({ threshold: 0.1, once: true })
 
   return (
-    <section id="registration" className="py-24 md:py-32 px-5 md:px-10">
+    <section id="registration" className="py-16 md:py-24 px-5 md:px-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Elevated card with light-blue tint */}
         <div
