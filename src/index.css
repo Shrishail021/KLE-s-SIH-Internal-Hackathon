@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base ───────────────────────────────────────────── */
+:root {
+  --color-beige: #F5F5F0;
+  --color-navy: #001F3F;
+  --color-skyblue: #87CEEB;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-inter);
+  background-color: var(--color-beige);
+  color: #1a1c1c;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Background Grid Texture ──────────────────────────── */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(0, 31, 63, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 31, 63, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ─── Glassmorphism Navbar ─────────────────────────────── */
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 10px 30px rgba(0, 31, 63, 0.08);
+}
+
+.glass-navbar-scrolled {
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 12px 40px rgba(0, 31, 63, 0.12);
+}
+
+/* ─── Card Hover ─────────────────────────────────────── */
+.card-lift {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 20px 40px rgba(0, 31, 63, 0.10);
+}
+
+/* ─── Theme Card Hover (Problem Statement grid) ─────────── */
+.theme-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(0, 31, 63, 0.07);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  transition:
+    transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.35s ease,
+    border-color 0.25s ease;
+  text-decoration: none;
+  display: block;
+}
+.theme-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 24px 48px rgba(0, 31, 63, 0.14);
+  text-decoration: none;
+}
+
+/* Top stripe — expands on hover */
+.theme-card .stripe {
+  height: 4px;
+  width: 36%;
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.theme-card:hover .stripe {
+  width: 100%;
+}
+
+/* Icon bubble — tilts on hover */
+.theme-card .icon-bubble {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.theme-card:hover .icon-bubble {
+  transform: scale(1.12) rotate(-6deg);
+}
+
+/* Theme title — shifts color on hover */
+.theme-card .theme-title {
+  transition: color 0.2s ease;
+}
+
+/* Problem border — brightens on hover */
+.theme-card .problem-border {
+  border-left-width: 2px;
+  border-left-style: solid;
+  transition: border-color 0.25s ease, padding-left 0.25s ease;
+}
+.theme-card:hover .problem-border {
+  padding-left: 14px;
+}
+
+/* SIH Portal link — always present, transforms on hover */
+.theme-card .sih-link {
+  transition: opacity 0.25s ease, transform 0.3s ease, gap 0.2s ease;
+  opacity: 0.45;
+  transform: translateX(-6px);
+}
+.theme-card:hover .sih-link {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Glow overlay */
+.theme-card .card-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 1.25rem;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.theme-card:hover .card-glow {
+  opacity: 1;
+}
+
+/* ─── Button Base ─────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-navy);
+  color: #ffffff;
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.875rem 2.25rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-primary:hover {
+  background-color: #0c6780;
+  transform: translateY(-2px);
+  box-shadow: 0px 12px 30px rgba(0, 31, 63, 0.25);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--color-navy);
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.875rem 2.25rem;
+  border-radius: 9999px;
+  border: 2px solid var(--color-navy);
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-outline:hover {
+  background-color: rgba(0, 31, 63, 0.05);
+  transform: translateY(-2px);
+}
+
+/* ─── Section Headings ──────────────────────────────────── */
+.section-title {
+  font-family: var(--font-montserrat);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--color-navy);
+}
+
+/* ─── Scrollbar ───────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-beige);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 31, 63, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 31, 63, 0.45);
+}
+
+/* ─── Three.js Canvas ───────────────────────────────────── */
+.threejs-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* ─── Accent Glow Blob ──────────────────────────────────── */
+.glow-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+/* ─── Mobile nav dropdown ───────────────────────────────── */
+.mobile-nav {
+  animation: slideDown 0.25s ease-out forwards;
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── Material Symbol baseline fix ──────────────────────── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
