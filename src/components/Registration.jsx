@@ -30,7 +30,7 @@ const STEPS = [
     icon: 'celebration',
     title: 'Confirm & Compete',
     description:
-      'Once you complete filling the Google form you\'ll get a WhatsApp group link there. You must join and further updates will be posted in WhatsApp.',
+      'Upon successfully submitting the form, you will receive a link to join the official WhatsApp group. Joining is mandatory, as all crucial announcements and hackathon updates will be communicated there.',
   },
 ]
 
