@@ -9,7 +9,7 @@ const STEPS = [
     id: 1,
     icon: 'group_add',
     title: 'Form Your Team',
-    description: 'Gather exactly 6 students from your department. Choose your strongest combination of skills — coding, design, and domain knowledge.',
+    description: 'Gather exactly 6 students from your department. At least one female team member is mandatory.Choose your strongest combination of skills — coding, design, and domain knowledge.',
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const STEPS = [
     icon: 'celebration',
     title: 'Confirm & Compete',
     description:
-      'Await confirmation from the organising committee. Show up ready to build on hackathon day — 8 hours of pure innovation.',
+      'Once you complete filling the Google form you\'ll get a WhatsApp group link there. You must join and further updates will be posted in WhatsApp.',
   },
 ]
 
